@@ -19,6 +19,5 @@ CREATE TABLE IF NOT EXISTS `<<table-prefix>>comments` (
   KEY `comment_approved_date_gmt` (`comment_approved`,`comment_date_gmt`),
   KEY `comment_date_gmt` (`comment_date_gmt`),
   KEY `comment_parent` (`comment_parent`),
-  KEY `comment_author_email` (`comment_author_email`(10)),
-  KEY `woo_idx_comment_type` (`comment_type`)
+  KEY `comment_author_email` (`comment_author_email`(10))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
